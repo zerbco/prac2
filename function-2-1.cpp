@@ -13,7 +13,7 @@ void print_binary_str(string decimal_number) {
     string binary = "";
 
     while (num > 0) {
-        binary = to_string(num % 2 == 0) + binary;
+        binary = binary + to_string(num % 2);
         num /= 2;
     }
 

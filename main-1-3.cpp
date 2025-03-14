@@ -1,17 +1,16 @@
 #include <iostream>
 
-extern void numbers_print(int array[5][5]);
+extern void count_digits(int (*array)[4]);
 
 int main() {
-    int array[5][5] = {
-                       {1, 2, 3, 4, 5},
-                        {5, 6, 7, 8, 6},
-                        {9, 10, 11, 12, 4},
-                        {13, 14, 15, 16, 0},
-                        {7, 8, 9, 1, 2} 
-                        };
+    int array[4][4] = {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {9, 0, 1, 2},
+        {3, 4, 5, 6}
+    };
 
-    numbers_print(array);
+    count_digits(array);
 
     return 0;
 }

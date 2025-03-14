@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-void numbers_print(int array[5][5]) {
+void count_digits(int (*array)[4]) {
     int count[10] = {0};
 
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
             int value = array[i][j];
 
             if (value >= 0 && value <= 9) {
